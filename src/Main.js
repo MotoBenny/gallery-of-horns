@@ -1,12 +1,15 @@
 import React from "react";
-// import HornedBeast from "./HornedBeast";
+import Footer from "./Footer";
+import Header from "./Header";
+import HornedBeast from "./HornedBeast";
 
-class Main extends React.Component{
+class Main extends React.Component {
   render() {
     return (
-      <p>
-        stand-in content
-      </p>
+      <>
+        <HornedBeast></HornedBeast>
+        <HornedBeast></HornedBeast>
+      </>
     );
   }
 }
