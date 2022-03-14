@@ -13,7 +13,7 @@ class App extends React.Component{
     return (
       <>
         <Header></Header>
-          <Main></Main>
+          <Main title="TEST TITLE" imageUrl="TEST URL" description="TEST DESCRIPTION"></Main>
         <Footer></Footer>
       </>
     )
