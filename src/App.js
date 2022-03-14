@@ -7,13 +7,12 @@ import Main from './Main';
 
 
 
-
 class App extends React.Component{
   render() {
     return (
       <>
         <Header></Header>
-          <Main title="TEST TITLE" imageUrl="TEST URL" description="TEST DESCRIPTION"></Main>
+          <Main></Main>
         <Footer></Footer>
       </>
     )
