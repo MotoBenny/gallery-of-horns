@@ -1,6 +1,6 @@
 import React from "react";
 import HornedBeast from "./HornedBeast";
-
+import './Main.css'
 
 class Main extends React.Component {
   render() {
@@ -12,6 +12,7 @@ class Main extends React.Component {
           name={critter.name}
           image_url={critter.image_url}
           description={critter.description}
+          horns={critter.horns}
           key={index}
         />
       )

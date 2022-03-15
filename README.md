@@ -86,18 +86,18 @@ Number and name of feature: Allow user to vote for their favorite beast
 
 Estimate of time needed to complete: 45
 
-Start time: _____
+Start time: 3:35
 
-Finish time: _____
+Finish time: 4:10
 
-Actual time needed to complete: _____
+Actual time needed to complete: 45
 
 
 Number and name of feature: Bootstrap
 
 Estimate of time needed to complete: 1:30
 
-Start time: _____
+Start time: 4:11
 
 Finish time: _____
 
