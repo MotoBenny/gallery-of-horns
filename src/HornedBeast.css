@@ -4,12 +4,12 @@
   border-radius: 15px;
   padding: 1vw;
   margin-bottom: 1vw;
-  width: 16%;
+  /* width: 16%; */
   margin: .4vw;
 }
 
 .Card.Title {
-  margin: auto;
+  /* margin: auto; */
 }
 
 .image {
@@ -20,7 +20,7 @@
 
 .Card.Text {
   font-size: 11px;
-  margin: auto;
+  /* margin: auto; */
   display: inline-block;
   margin-bottom: .5rem;
   padding-left: 1rem;

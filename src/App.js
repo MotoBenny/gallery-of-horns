@@ -7,22 +7,20 @@ import Main from './Main';
 import Data from './data.json'
 
 
-class App extends React.Component{
+class App extends React.Component {
+
   render() {
     return (
       <>
-        <Header/>
-          <Main data={Data}/>
-        <Footer/>
+        <Header />
+        <Main data={Data}
+          openModal={this.openModal}
+        />
+        <Footer />
       </>
     )
-  }
-}
-
-
-
-
-
+  };
+};
 
 export default App;
 
@@ -42,23 +40,17 @@ import Footer from './Footer';
 import Main from './Main';
 import Data from './data.json'
 
-
 class App extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
-      hearts: '', // this is the like/favorite value
       title: '',
+      image: 
       showModal: false
     };
   }
 // event handler
 
-  addHearts = () => {
-    this.setState({
-      hearts: this.state.hearts + '🤘';
-    })
-  }
 // modal handler
   hideModal = () => {
     this.setState({
@@ -69,9 +61,9 @@ class App extends React.Component{
     this.setState({
       showModal: true,
       title: name
+      image: image_url
     })
   }
-
   render() {
     return (
       <>
@@ -79,7 +71,7 @@ class App extends React.Component{
           hearts={this.state.hearts} // passes this to header.js where it is then a prop
         />
           <Main data={Data}/>
-          addHearts={this.addHearts}
+  
           openModal={this.openModal}
         <Footer/>
         // modal example code below
@@ -95,5 +87,4 @@ class App extends React.Component{
     )
   }
 }
-
 */

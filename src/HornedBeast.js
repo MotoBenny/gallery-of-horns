@@ -1,6 +1,5 @@
 import React from "react";
 import './HornedBeast.css'
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
 
@@ -16,14 +15,30 @@ class HornedBeast extends React.Component {
     this.setState({
       favorites: this.state.favorites + 1
     });
-  }
+  };
+  // handleShowModal = () => {
+  //   this.props.openModal(this.props.name);
+  //   this.props.openModal(this.props.imageUrl);
+  //   this.props.openModal(this.props.desc);
+  // };
 
-//  style={{ width: '18rem' }}
+  handleClick = () => {
+    this.myFav();
+    this.props.openModal(this.props.beast);
+  };
+
   render() {
     return (
       <>
-        <Card>
-          <Card.Img class="image"  className="h-100" variant="top" alt={this.props.title} src={this.props.image_url} />
+        <Card >
+          <Card.Img
+          className="image"
+          variant="top"
+          alt={this.props.title}
+          src={this.props.image_url}
+          onClick={this.handleClick}
+
+          />
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
             <Card.Text>🤘 {this.state.favorites} 🤘</Card.Text>
@@ -81,7 +96,6 @@ class HornedBeast extends React.Component {
   }
 
 
-//  style={{ width: '18rem' }}
   render() {
     return (
       <>
