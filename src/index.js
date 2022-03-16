@@ -12,3 +12,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+/* 
+Lecture notes
+
+*/
