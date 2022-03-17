@@ -11,29 +11,16 @@ class Main extends React.Component {
     super(props);
     this.state = {
       data: this.props.data,
-      showModal: false,
-      beast: {}
     }
   }
-  hideModal = () => {
-    this.setState({
-      showModal: false,
-    });
-  };
-  openModal = (beast) => {
-    this.setState({
-      showModal: true,
-      beast,
-    });
-  };
 
   render() {
     return (
       <main>
         <SelectedBeast
-          showModal={this.state.showModal}
-          beast={this.state.beast}
-          hideModal={this.hideModal}
+          showModal={this.props.showModal}
+          beast={this.props.beast}
+          hideModal={this.props.hideModal}
         />
 
         <Container>
@@ -48,7 +35,7 @@ class Main extends React.Component {
                   description={beast.description}
                   horns={beast.horns}
                   key={index}
-                  openModal={this.openModal} 
+                  openModal={this.props.openModal} 
                   />
               </Col>
             ))}
@@ -63,32 +50,5 @@ export default Main;
 
 /* 
 Lecture notes
-
-class Main extends React.Component {
-
-  render() {
-    let beasts = [];
-    this.props.data.forEach((critter, index) => { // will need to change this to .map for todays lab
-      beasts.push(
-        <HornedBeast
-          title={critter.title}
-          name={critter.name}
-          image_url={critter.image_url}
-          description={critter.description}
-          horns={critter.horns}
-          key={index}
-          addHearts={this.props.addHearts}
-          openModal={this.props.openModal}
-        />
-      )
-    })
-
-    return (
-      <main>
-        {beasts}
-      </main>
-    );
-  }
-}
 
 */
