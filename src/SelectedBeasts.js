@@ -9,7 +9,7 @@ class SelectedBeast extends React.Component {
         onHide={this.props.hideModal}
         >
         <Modal.Header closeButton>
-          <Modal.Title>this is your Modal!{this.props.beast.title}</Modal.Title>
+          <Modal.Title>{this.props.beast.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <img 

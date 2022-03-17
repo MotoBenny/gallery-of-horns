@@ -16,11 +16,6 @@ class HornedBeast extends React.Component {
       favorites: this.state.favorites + 1
     });
   };
-  // handleShowModal = () => {
-  //   this.props.openModal(this.props.name);
-  //   this.props.openModal(this.props.imageUrl);
-  //   this.props.openModal(this.props.desc);
-  // };
 
   handleClick = () => {
     this.myFav();

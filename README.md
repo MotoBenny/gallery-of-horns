@@ -110,9 +110,9 @@ Estimate of time needed to complete: 1 hour
 
 Start time: 1:56
 
-Finish time: _____
+Finish time: 4:40
 
-Actual time needed to complete: _____
+Actual time needed to complete: 3 hours
 
 Additional notes and sources
 Button Animation sourced and implemented from [https://dev.to/webdeasy/top-20-css-buttons-animations-f41](here)
