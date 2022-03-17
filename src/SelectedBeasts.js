@@ -3,6 +3,7 @@ import { Modal } from 'react-bootstrap';
 
 class SelectedBeast extends React.Component {
   render() {
+    console.log(this.props)
     return (
       <Modal
         show={this.props.showModal}
@@ -23,3 +24,8 @@ class SelectedBeast extends React.Component {
 }
 
 export default SelectedBeast;
+
+/* 
+Lecture notes
+
+*/
