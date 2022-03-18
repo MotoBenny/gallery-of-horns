@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import SelectedBeast from './SelectedBeasts';
+import { Form } from "react-bootstrap";
 import './Main.css'
 
 class Main extends React.Component {
@@ -22,10 +23,21 @@ class Main extends React.Component {
           beast={this.props.beast}
           hideModal={this.props.hideModal}
         />
-
+        <Form>
+          <Form.Label>Show beasts with this many horns.
+          </Form.Label>
+          <Form.Group>
+            <Form.Select onChange={this.props.handleSubmit}>
+              <option value='0'>All</option>
+              <option value='1'>One Horn</option>
+              <option value='2'>Two Horns</option>
+              <option value='3'>Three or More</option>
+            </Form.Select>
+          </Form.Group>
+        </Form>
         <Container>
           <Row xs={1} sm={2} md={3} lg={4}>
-            {this.state.data.map((beast, index) => (
+            {this.props.numberOfHorns.map((beast, index) => (
               <Col key={index}>
                 <HornedBeast
                   beast={beast}
@@ -35,8 +47,8 @@ class Main extends React.Component {
                   description={beast.description}
                   horns={beast.horns}
                   key={index}
-                  openModal={this.props.openModal} 
-                  />
+                  openModal={this.props.openModal}
+                />
               </Col>
             ))}
           </Row>
