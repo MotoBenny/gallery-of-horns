@@ -3,7 +3,6 @@ import { Modal } from 'react-bootstrap';
 
 class SelectedBeast extends React.Component {
   render() {
-    console.log(this.props)
     return (
       <Modal
         show={this.props.showModal}
@@ -16,7 +15,8 @@ class SelectedBeast extends React.Component {
           <img 
           style={{width: '100%'}}
           src={this.props.beast.image_url}
-          alt={this.props.beast.title}></img>
+          alt={this.props.beast.title}>
+          </img>
           {this.props.beast.description}</Modal.Body>
       </Modal>
     );

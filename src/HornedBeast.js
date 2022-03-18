@@ -1,8 +1,7 @@
 import React from "react";
-import './HornedBeast.css'
-import { Card } from 'react-bootstrap'
-import { Button } from 'react-bootstrap'
-
+import './HornedBeast.css';
+import { Card } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -14,7 +13,7 @@ class HornedBeast extends React.Component {
 
   myFav = () => {
     this.setState({
-      favorites: this.state.favorites + 1
+      favorites: this.state.favorites + 1,
     });
   }
 
@@ -26,14 +25,13 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <>
-        <Card >
+        <Card className="h-100">
           <Card.Img
           className="image"
           variant="top"
           alt={this.props.title}
           src={this.props.image_url}
           onClick={this.handleClick}
-
           />
           <Card.Body>
             <Card.Title>{this.props.title}</Card.Title>
